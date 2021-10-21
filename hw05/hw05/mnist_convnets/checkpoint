@@ -1,0 +1,2 @@
+model_checkpoint_path: "/mnt/c/Users/Sanko/Documents/School/IntelligentSystems/hw05/hw05/mnist_convnets/my_shallow_tfl_mnist_ann"
+all_model_checkpoint_paths: "/mnt/c/Users/Sanko/Documents/School/IntelligentSystems/hw05/hw05/mnist_convnets/my_shallow_tfl_mnist_ann"

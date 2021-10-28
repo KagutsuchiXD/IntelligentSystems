@@ -12,7 +12,7 @@ Bugs to vladimir kulyukin in canvas
 (in-package :user)
 
 ;;; change this to the directory where the ca files are.
-(defparameter *ca-dir* "/home/vladimir/teaching/AI/F21/hw/hw08/hw08/")
+(defparameter *ca-dir* "/mnt/c/Users/Sanko/Documents/School/IntelligentSystems/hw08/hw08/")
 
 (defparameter *files* '("ca-utilities" "cd" "ca" "ca-functions" "ca-lexicon"))
 

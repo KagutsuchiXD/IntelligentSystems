@@ -71,10 +71,10 @@ Description: Simple word definitions for CA
 	(concept ?act (ptrans :time (past)))
     (request (test (before ?act ?actor (animate)))
              (actions (modify ?act :actor ?actor)))
+	(request (test (before ?act ?actor (animate)))
+		     (actions (modify ?act :object ?actor)))
     (request (test (after ?act ?loc (location)))
-	         (actions (modify ?act :to ?loc)))
-    (request (test (before ?act ?obj (phys-obj)))
-		  (actions (modify ?act :object ?obj))))
+	         (actions (modify ?act :to ?loc))))
 
 (define-ca-word
     restaurant
@@ -90,8 +90,9 @@ Description: Simple word definitions for CA
     to
     ;;; your code here
     (mark ?x)
-	(request (test (before ?x ?con (concept)))
-		(actions (modify ?con :ref (indef)))))
+	;(request (test (before ?x ?con (concept)))
+		;(actions (modify ?x :action ?con)))
+		)
 
 
 (define-ca-word

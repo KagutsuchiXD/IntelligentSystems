@@ -1,0 +1,17 @@
+(load "gps.lisp")
+(use *school-ops*)
+(gps *school-world* '(son-at-school))
+(setf son-at-school-plan (gps *school-world* '(son-at-school)))
+son-at-school-plan
+(trace-gps)
+(gps *school-world* '(son-at-school))
+(untrace-gps)
+
+
+
+(use *block-ops*)
+(gps *block-world* '(a-on-b b-on-c))
+(gps *block-world* '(b-on-c a-on-b))
+
+(use *banana-ops*)
+(gps *banana-world* '(not-hungry))

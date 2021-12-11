@@ -2,6 +2,14 @@
 ;;; Module: ops.lisp
 ;;; different worlds and operators for the GPS planner.
 ;;; bugs to vladimir kulyukin in canvas
+
+;;;Plan for Problem 2 A:
+;;;((START) (EXECUTE PUT-C-FROM-A-ON-T) (EXECUTE PUT-B-FROM-T-ON-C) (EXECUTE PUT-A-FROM-T-ON-B))
+;;;Plan for Problem 2 B:
+;;;((START) (EXECUTE PUT-C-FROM-A-ON-T) (EXECUTE PUT-B-FROM-T-ON-C) (EXECUTE PUT-A-FROM-T-ON-B))
+;;;Plan for Problem 3:
+;;;((START) (EXECUTE DROP-BALL) (EXECUTE PUSH-CHAIR-FROM-DOOR-TO-MIDDLE-ROOM) (EXECUTE CLIMB-ON-CHAIR)
+;;; (EXECUTE GRASP-BANANAS) (EXECUTE EAT-BANANAS))
 ;;; =========================================
 
 (in-package :user)
@@ -100,7 +108,7 @@
 		:add-list '(at-middle-room chair-at-middle-room)
 		:del-list '(at-door chair-at-door))
 	; op2
-	(make-op :action 'climb-on-chair
+	(make-op :action 'climb-on-chair  
 		:preconds '(at-middle-room on-floor chair-at-middle-room)
 		:add-list '(at-bananas)
 		:del-list '(on-floor))
